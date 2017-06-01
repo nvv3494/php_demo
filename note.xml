@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quocgia>
+	Việt Nam
+	<tinh giatri = "Hải Dương">
+		<huyen>Bình Giang</huyen>
+	</tinh>
+	<tinh giatri="Hưng Yên">
+		<huyen>Mỹ Hào</huyen>
+	</tinh>
+	<tinh>Hà Nam</tinh>
+	<tinh>Quảng Ninh</tinh>
+	<tinh>Hòa Bình</tinh>
+	<tinh>Thái Bình</tinh>
+	<tinh>Ninh Bình</tinh>
+</quocgia>

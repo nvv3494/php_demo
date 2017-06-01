@@ -1,0 +1,35 @@
+<!-- không hiểu sao chạy luôn -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo AJAX</title>
+	<script type="text/javascript">
+		function showHint(str) {
+			// body...
+			if(str.lengt == 0){
+				document.getElementById("txtSuggession").innerHTML = "";
+				return ;
+			}
+			else
+			{
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function(){
+					if(this.readyState == 4 && this.status == 200){
+						document.getElementById("txtSuggession").innerHTML = this.responseText;
+					}
+				};
+				xmlhttp.open("GET","gethint.php?q=" + str, true);
+				xmlhttp.send();
+			}
+		}
+	</script>
+</head>
+<body>
+	<p><b>Please type text: </b></p>
+	<form>
+		<input type="text" name="name" onkeyup="showHint(this.value)">
+	</form>
+	<p>Gợi ý: <span id = "txtSuggession"></span></p>
+</body>
+</html>
